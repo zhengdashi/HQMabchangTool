@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
                        这个是一个库的描述，调用直接pod就行了。测试使用
                        DESC
 
-  s.homepage         = 'https://github.com/zhengdaqian/HQMabchangTool'
+  s.homepage         = 'git@github.com:zhengdashi/HQMabchangTool'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'zhengdaqian' => '173977958@qq.com' }
-  s.source           = { :git => 'https://github.com/zhengdaqian/HQMabchangTool.git', :tag => s.version.to_s }
+  s.source           = { :git => 'git@github.com:zhengdashi/HQMabchangTool.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
