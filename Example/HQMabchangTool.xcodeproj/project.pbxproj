@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		1C3A36FDE5E7D257BB7DD98E /* Pods-HQMabchangTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQMabchangTool_Tests.release.xcconfig"; path = "Target Support Files/Pods-HQMabchangTool_Tests/Pods-HQMabchangTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		34D4534C51A2CD482501FEDC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		34D4534C51A2CD482501FEDC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		482EE68AC66CB36D61CB31E4 /* Pods_HQMabchangTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HQMabchangTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C316E29317AF412A9355A87 /* Pods-HQMabchangTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQMabchangTool_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HQMabchangTool_Tests/Pods-HQMabchangTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* HQMabchangTool_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HQMabchangTool_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,8 +63,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94A82E8A4C11CDC3C99206D8 /* Pods_HQMabchangTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HQMabchangTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		98686001CF7DF52C2EB57DAE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		A60730749B3A649E25E1595C /* HQMabchangTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HQMabchangTool.podspec; path = ../HQMabchangTool.podspec; sourceTree = "<group>"; };
+		98686001CF7DF52C2EB57DAE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A60730749B3A649E25E1595C /* HQMabchangTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HQMabchangTool.podspec; path = ../HQMabchangTool.podspec; sourceTree = "<group>"; };
 		AAE9C2ECBDF3434CBBE72708 /* Pods-HQMabchangTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQMabchangTool_Example.debug.xcconfig"; path = "Target Support Files/Pods-HQMabchangTool_Example/Pods-HQMabchangTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C899C246B3B23EAE00EE3A84 /* Pods-HQMabchangTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQMabchangTool_Example.release.xcconfig"; path = "Target Support Files/Pods-HQMabchangTool_Example/Pods-HQMabchangTool_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +103,6 @@
 				5C316E29317AF412A9355A87 /* Pods-HQMabchangTool_Tests.debug.xcconfig */,
 				1C3A36FDE5E7D257BB7DD98E /* Pods-HQMabchangTool_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = zhengdaqian;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						ProvisioningStyle = Manual;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -494,12 +497,15 @@
 			baseConfigurationReference = AAE9C2ECBDF3434CBBE72708 /* Pods-HQMabchangTool_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HQMabchangTool/HQMabchangTool-Prefix.pch";
 				INFOPLIST_FILE = "HQMabchangTool/HQMabchangTool-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -510,12 +516,15 @@
 			baseConfigurationReference = C899C246B3B23EAE00EE3A84 /* Pods-HQMabchangTool_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HQMabchangTool/HQMabchangTool-Prefix.pch";
 				INFOPLIST_FILE = "HQMabchangTool/HQMabchangTool-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
