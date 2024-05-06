@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HQMabchangTool'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = '这是一个库，测试使用。'
 
 # This description is used to generate tags and improve search results.
