@@ -9,6 +9,11 @@
 #define HQMabchangHeader_h
 
 #import "HQTest.h"
-
+#import "UIView+HQ.h"
+#import "NSString+HQ.h"
+#import "UITableView+HQ.h"
+#import "NSObject+HQ.h"
+#import "HQAlertController.h"
+#import "UIColor+HQ.h"
 
 #endif /* HQMabchangHeader_h */
